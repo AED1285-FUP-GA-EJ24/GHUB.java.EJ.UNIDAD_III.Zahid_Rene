@@ -32,5 +32,6 @@ public class DifEdades {
         }
         System.out.println("Nombre del hermano mayor:"+nombremayor);
         System.out.println("Diferencia de edad:"+edad);
+        teclado.close();
     }
 }

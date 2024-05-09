@@ -21,7 +21,6 @@ public class INE {
         {
             System.out.println("Usted no puede tramiare su INE");
         }
-
-
+        entrada.close();
     }
 }

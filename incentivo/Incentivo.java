@@ -16,5 +16,6 @@ public class Incentivo {
             tiene_incentivo=false;
         }
         System.out.println("Tiene incentivo"+tiene_incentivo);
+        teclado.close();
     }
 }

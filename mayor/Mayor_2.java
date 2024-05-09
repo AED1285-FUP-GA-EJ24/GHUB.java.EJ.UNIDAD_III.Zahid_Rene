@@ -19,5 +19,6 @@ public class Mayor_2 {
         if(c>a && c>a){
             System.out.println("El mayor es: "+c);
         }        
+        teclado.close();
     }
 }

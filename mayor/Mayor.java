@@ -26,5 +26,6 @@ public class Mayor {
                 System.out.println(c);
             }
         }
+        teclado.close();
     }
 }

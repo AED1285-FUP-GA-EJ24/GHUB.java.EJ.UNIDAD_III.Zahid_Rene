@@ -44,6 +44,6 @@ public class Romano {
             default:
                 break;
         }
-        
+        teclado.close();
     }
 }
