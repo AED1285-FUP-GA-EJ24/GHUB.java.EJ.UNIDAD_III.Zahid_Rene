@@ -1,10 +1,10 @@
 package miPrincipal;
 import java.util.Scanner;
 
+import INE.INE;
 import bono.Bono;
 import difEdades.DifEdades;
 import incentivo.Incentivo;
-import ine.Ine;
 import mayor.Mayor3;
 import menorde3.Menorde3;
 import peaje.Peaje;
@@ -19,6 +19,7 @@ import demoOpTernario.DemoOpTernario;
 import demoWhile.DemoWhile;
 import multiplicar.Multiplicar;
 import calorias.Calorias;
+import demoBreakyContinue.DemoBreakyContinue;
 import promedio2.Promedio;
 import ecuacion.Ecuacion;
 import leerX.LeerX;
@@ -58,14 +59,16 @@ public class Principal {
           System.out.println("*22) Promedio Calificaciones (centinela)");
           System.out.println("*23) Elaboracion Menu                 ");
           System.out.println("*24) Demo ciclo do..while"            );
+          System.out.println("*25) Demo Break y Continue"            );
+          System.out.println("*26) Calculo de saldo"            );
           System.out.println("*99) Salir ");
           System.out.println("**************************************");
           System.out.print("Seleccion Opcion:");
           opcion = entrada.nextInt();
           switch(opcion){
               case 1:
-              Ine objIne = new Ine();
-              objIne.determinarSiIne();
+              INE objINE = new INE();
+              objINE.DeterminarsiINE();
               break;
               case 2:
               DifEdades Dedad = new DifEdades();
@@ -150,7 +153,7 @@ public class Principal {
                 objLeerX.leerX();
                 break;
               case 22:
-                promedio3.Promedio objProm3 = new promedio3.Promedio();
+                promedio_3.Promedio objProm3 = new promedio_3.Promedio();
                 objProm3.promedio();
                 break;
               case 23:
@@ -160,6 +163,14 @@ public class Principal {
               case 24:
                 DemoDoWhile objDemoDoWhile = new DemoDoWhile();
                 objDemoDoWhile.demoDoWhile();
+                break;
+                case 25:
+                DemoBreakyContinue objDemoBreakyContinue = new DemoBreakyContinue();
+                objDemoBreakyContinue.DemoBreakyContinue();
+                break;
+                case 25:
+                CalculodeSaldo objcalculoSaldo = new CalculodeSaldo();
+                objcalculoSaldo.calculoSaldo();
                 break;
                 
 
